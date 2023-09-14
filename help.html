@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Help Page</title>
+    
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            background-color: #f4f4f4;
+        }
+        .container {
+            margin-top: 30px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Customer Help Page</h1>
+        <p>Welcome to our customer help page. Here, you can find answers to common questions and get assistance with common issues.</p>
+
+        <!-- Frequently Asked Questions (FAQ) Section -->
+        <h2>Frequently Asked Questions (FAQ)</h2>
+        <div class="accordion" id="faqAccordion">
+            <!-- FAQ Item 1 -->
+            <div class="card">
+                <div class="card-header" id="faqHeading1">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                            Question 1: What is AquaSolution?
+                        </button>
+                    </h5>
+                </div>
+                <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Answer 1: AquaSolution ....
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="card">
+                <div class="card-header" id="faqHeading2">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                            Question 2: How do I reset my password?
+                        </button>
+                    </h5>
+                </div>
+                <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Answer 2: To reset your password, please follow these steps: ...
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more FAQ items as needed -->
+
+        </div> <!-- End FAQ Section -->
+
+        <!-- Contact Us Section -->
+        <h2>Contact Us</h2>
+        <p>If you couldn't find the answer to your question in our FAQ section, please feel free to contact our support team:</p>
+        <ul>
+            <li>Email: <a href="mailto:support@example.com">support@example.com</a></li>
+            <li>Phone: +1 (123) 456-7890</li>
+        </ul>
+
+    </div>
+
+    <!-- Bootstrap JS and jQuery links (placed at the end for faster page loading) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

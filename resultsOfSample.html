@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Sample</title>
+    <style>
+/* Style the heading */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #007bff; /* Change the background color to your preferred color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Style the container (optional) */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+    </style>
+</head>
+<body>
+    <h1>Enter the results</h1>
+	<input type="text" id="location-input" placeholder="Enter the area you are in">
+	<input type="text" id="location-input" placeholder="Enter your findings after testing"><br>
+	
+    <button type="submit" onclick="displayResult()">Submit</button>
+    <div id="result"></div>
+
+    <script>
+        function displayResult() {
+            // Get the user's input
+            const locationInput = document.getElementById('location-input').value;
+
+            // Perform some action or generate a result based on the input (replace this with your logic)
+            const sampleResult = `You entered: ${locationInput}`;
+
+            // Display the result
+            const resultElement = document.getElementById('result');
+            resultElement.textContent = sampleResult;
+        }
+    </script>
+</body>
+</html>
